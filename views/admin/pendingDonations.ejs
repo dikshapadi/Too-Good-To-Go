@@ -1,0 +1,42 @@
+<html>
+<main>
+<body>
+<head>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/adminstyles.css">
+</head>
+<a href="/admin/dashboard"> 
+	<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
+	
+</a>
+
+<h1>Pending Donations</h1>
+<div class="mydiv2">
+<table  width=100% height=100% bgcolor=#FFFFFF align="center" >
+<tr>
+<th>Donor No.</th>
+<th> Donor Name  </th>
+<th> Food type </th>
+<th> Quantity </th>
+<th> Status </th>
+<th> Action</th>
+</tr>
+</thead>
+<tbody>
+     <% for(let i=0; i<pendingDonations.length; i++) { %>
+          <tr>
+               <th scope="row"> <%= i+1 %> </th>
+               <td><%= pendingDonations[i].donor.firstName + " " + pendingDonations[i].donor.lastName %></td>
+               <td><%= pendingDonations[i].foodType %></td>
+               <td><%= pendingDonations[i].quantity %></td>
+               <td class="fw-bold text-<%= pendingDonations[i].status %>"> <%= pendingDonations[i].status %> </td>
+               <td><a href="/admin/donation/view/<%= pendingDonations[i]._id %>" class="btn">View</a></td>
+          </tr>
+     <% } %>
+</tbody>
+</table>
+</body>
+</main>
+</html>

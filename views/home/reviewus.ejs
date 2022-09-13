@@ -1,0 +1,65 @@
+<head>
+  <link rel="stylesheet" href="../../assets/css/reviewus.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+  <div class="wrapper">
+    <header> Review Us</header>
+    <form action="/home/reviewus" method="post">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="review[name]" placeholder="Enter your name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="review[email]" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
+        </div>
+    </div>
+
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="review[phone]" placeholder="Enter your phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        
+      </div>
+      <div class="message">
+        <textarea placeholder="Write your review here" name="review[message]"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div class="button-area">
+        <button onclick="validate()" type="submit">Send Review</button>
+        <span></span>
+      </div>
+    </form>
+
+    
+    <script type="text/javascript">
+        function validate(){
+            var form = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("text");
+    
+            var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+          
+            if(regx.text(email)){
+                alert("You have provided a valid Email ID ")
+                return true
+            }
+            else{
+                 alert("Sorry! Incorrect Email ID")
+                 return false;
+            }
+    
+        }
+        </script>
+
+    
+    </script>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

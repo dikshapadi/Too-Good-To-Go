@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="style.cc">
+<meta name="viewport" content="width=device-width,intial-scale=1.0">
+<script src="https://kit.fontawesome.com/070d9e53fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="page">
+
+    <div class="container">
+    <img src="../../assets/images/donateforzero.jpg">
+    <form action="/donor/donate" method="POST">
+        <div class="user-details">
+            <div class="input-box">
+            <span class="details">Number of food items to be donated</span>
+            <input name="donation[itemsCount]" type="text" placeholder="Type the number..." required>
+        </div>
+    </br>
+
+         <div class="user-details">
+            <div class="input-box">
+            <span class="details">Quantity</span>
+            <input name="donation[quantity]" type="text" placeholder="Enter quantity of food..." required>
+        </div>
+        
+        <p> Food category </br>
+         <input name="donation[category]" type="radio" name="VegorNon-VegorBoth" value="Veg">
+         Veg</br>
+         <input name="donation[category]" type="radio" name="VegorNon-VegorBoth" value="Non-Veg">
+         Non-Veg</br>
+         <input name="donation[category]" type="radio" name="VegorNon-VegorBoth" value="Both">
+         Both</br>
+        </p>
+        <div class="user-details">
+            <div class="input-box">
+            <span class="details">Date of pickup</span>
+           <input name="donation[pickupDate]" type="date" name="dateField"/>
+
+        </div>
+        </br>
+        <div class="user-details">
+            <div class="input-box">
+            <span class="details">Time of pickup</span>
+           <input name="donation[pickupTime]" type="time" onchange="onTimeChange()" id="timeInput" />
+           </div>
+        </br>
+         
+             
+            <label for="food">Food Type:</label>
+  <select name="donation[foodType]" name="food" id="food" multiple>
+    <option value="Rice">Rice</option>
+    <option value="Dal">Dal</option>
+    <option value="Food from hotel">Food from eateries</option>
+    <option value="Water/juice">Water/juice</option>
+    <option value="Biscuits">Biscuits</option>
+    <option value="Others">Other...</option>
+   </select>
+  <br>
+        <br>
+        <div class="user-details">
+          <div class="input-box">
+          <span class="details">Address to collect</span>
+          <input type="text" name="donation[address]" class="form-control" id="address" placeholder="Enter address.." value="<%= currentUser.address %>" required>
+        </div>
+        </br>
+        <br>
+          <div class="user-details">
+            <div class="input-box">
+            <span class="details">Phone</span>
+            <input type="number" name="donation[phone]" class="form-control" id="phone" placeholder="Enter phone.." value="<%= currentUser.phone %>" required>
+        </div>
+        </br>
+        <br>
+          <div class="user-details">
+            <div class="input-box">
+            <span class="details">Want to write some message?</span>
+            <textarea type="text" name="donation[donorToAdminMsg]" class="form-control" id="msg" placeholder="You can write here some msg.."></textarea>
+        </div>
+        </br>
+
+        <input type="submit" value="Donate">
+ 
+
+
+        </form>
+        </div>
+       </section>
+
+    </body>
+
+<style>
+.img{
+    float: right;
+}
+body{
+    float: left;
+    display: flex;
+    height:100vh;
+    justify-content: centre;
+    align-items: centre;
+    padding:10px;
+    background-image:url(../../assets/images/smile.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+   }
+.page{
+    min-height: 100vh;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+   }
+.container{
+    max-width: 500px;
+    background-color:#B1D7B4 ;
+    padding:25px 30px;
+    border-radius:5px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .title{
+    font-size: 70px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+.conatiner form .user-details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin:20px 0 12px 9;
+    width:calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 520;
+    margin-bottom: 10px
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+</style>
+
+</body>
+</html>

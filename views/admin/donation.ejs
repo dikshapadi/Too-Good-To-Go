@@ -1,0 +1,124 @@
+<html>
+<main>
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/adminstyles.css">
+</head>
+<style>
+	body {
+  background-color:#E4E9F7;
+}
+h1{ color:#707070; 
+}
+h1{ text-align: center;
+}
+h1{
+  font-family: 'Poppins', sans-serif;
+}
+
+.mydiv1{
+  border: 0px outset white;
+  border-radius: 25px;
+  background-color: #fff ;
+  position: absolute;
+  left: 30%;
+  top:14%;
+   margin:25px;
+padding:40px;
+color:#707070;
+}
+</style>
+</head>
+<a href="/admin/dashboard"> 
+	<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
+	</a>
+
+<h1>Donations</h1>
+</div>
+ <font size="+1">
+<div class="mydiv1">
+   <font face="Poppins"> 
+	
+		
+			<div class="mb-2">
+				<span>Donor Name:</span>
+				<span><%= donation.donor.firstName + " " + donation.donor.lastName %></span>
+			</div>
+			
+			<div class="mb-2">
+				<span>Food type:</span>
+				<span><%= donation.foodType %></span>
+			</div>
+			
+			<div class="mb-2">
+				<span>Quantity:</span>
+				<span><%= donation.quantity %></span>
+			</div>
+			
+			<div class="mb-2">
+				<span>Time of cooking:</span>
+				<span><%= donation.pickupTime %></span>
+			</div>
+			
+			<div class="mb-2">
+				<span>Address to collect:</span>
+				<span><%= donation.address %></span>
+			</div>
+			
+			<div class="mb-2">
+				<span>Phone:</span>
+				<span><%= donation.phone %></span>
+			</div>
+			
+			<% if(donation.donorToAdminMsg != "") { %>
+				<div class="mb-2">
+					<span>Message from Donor:</span>
+					<div class="ms-3"><%= donation.donorToAdminMsg %></div>
+				</div>
+			<% } %>
+				
+			<div class="mb-2">
+				<span>Status:</span>
+				<span class="fw-bold text-<%= donation.status %>"><%= donation.status %></span>
+			</div>
+			
+			<% if(donation.status == "assigned") { %>
+				<div class="mb-2">
+					<span>Agent assigned:</span>
+					<span><%= donation.agent.firstName + " "  + donation.agent.lastName %></span>
+				</div>
+			<% } %>
+			
+			<% if(donation.status == "assigned" && donation.adminToAgentMsg != "") { %>
+				<div class="mb-2">
+					<span>Your message to Agent:</span>
+					<div class="ms-3"><%= donation.adminToAgentMsg %></div>
+				</div>
+			<% } %>
+			
+			<% if(donation.status == "collected") { %>
+				<div class="mb-2">
+					<span>Collection time:</span>
+					<span><%= donation.collectionTime %></span>
+				</div>
+			<% } %>
+			
+			
+			<div class="mt-4">
+				<% if(donation.status == "pending") { %>
+					<a href="/admin/donation/accept/<%= donation._id %>" class="btn">Accept</a>
+					<a href="/admin/donation/reject/<%= donation._id %>" class="btn btn-danger">Reject</a>
+				<% } else if(donation.status == "accepted") { %>
+					<a href="/admin/donation/assign/<%= donation._id %>" class="btn">Assign agent</a>
+				<% } %>
+			
+			</div>
+	
+</font>	
+</div>
+</main>
+</html>

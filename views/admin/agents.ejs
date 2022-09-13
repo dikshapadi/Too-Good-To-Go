@@ -1,0 +1,58 @@
+<html>
+<main>
+<body>
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/adminstyles.css">
+</head>
+<style>
+.mydiv2{
+  border: 0px outset white ;
+  height:10%;
+  width:95%;
+  border-radius: 6px;
+  background-color: #FFFFFF ;
+  position: absolute;
+  left: 0%;
+  top:  15%;
+   margin:22px;
+padding:0px;
+ 
+}
+</style>
+</head>
+<a href="/admin/dashboard"> 
+	<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
+	
+</a>
+<h1>Agents</h1>
+<div class="mydiv2">
+<table  width=100% height=100% bgcolor=#FFFFFF align="center" >
+	       <thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Agent name</th>
+						<th scope="col">Email</th>
+						<th scope="col">Phone</th>
+						<th scope="col">Joined time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% for(let i=0; i<agents.length; i++) { %>
+						<tr>
+							<th scope="row"> <%= i+1 %> </th>
+							<td> <%= agents[i].firstName + " " + agents[i].lastName %> </td>
+							<td> <%= agents[i].email %> </td>
+							<td> <%= agents[i].phone %> </td>
+							<td> <%= agents[i].joinedTime.toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short"}) %> </td>
+					<% } %>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+</main>

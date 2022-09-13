@@ -1,0 +1,91 @@
+<head>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../../assets/css/donordash.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../../assets/images/too good to go-logos_black.png">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Food Donation</span>
+                    <span class="profession">Donor</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/donor/donate">
+                            <i class='bx bx-donate-heart icon' ></i>
+                            <span class="text nav-text">Donate</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/donor/donations/pending">
+                            <i class='bx bx-skip-previous icon' ></i>
+                            <span class="text nav-text">Pending Donations</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/donor/donations/previous">
+                            <i class='bx bx-skip-previous icon' ></i>
+                            <span class="text nav-text">Previous Donations</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/donor/profile">
+                            <i class='bx bx-user-pin icon' ></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/auth/logout">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Every Donation Counts</div>
+
+
+    </section>
+
+    <script>
+    	const body = document.querySelector('body'),
+     	sidebar = body.querySelector('nav'),
+    	toggle = body.querySelector(".toggle"),
+
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+		toggle.addEventListener("click" , () =>{sidebar.classList.toggle("close");})
+    </script>
+
+</body>
+</html>
+
+
