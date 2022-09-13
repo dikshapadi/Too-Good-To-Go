@@ -20,11 +20,14 @@
 .form{
     margin-top: 10%;
     position: absolute;
+    top: -20%;
     max-width: 450px;
     width: 80%;
-    padding:50px;
+    height: 97%;
+    padding:30px;
     border-radius: 6px;
     background: #FFF;
+   
     
     
 }
@@ -43,13 +46,13 @@ header{
     text-align: center;
 }
 form{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .form .field{
     position: relative;
     height: 50px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
     border-radius: 6px;
 }
 .field input,
