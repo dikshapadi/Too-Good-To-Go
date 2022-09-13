@@ -28,4 +28,8 @@ router.post("/home/reviewus", async (req,res) => {
 	}
 });
 
+router.get("/home/aboutus", (req,res) => {
+	res.render("home/aboutus");
+});
+
 module.exports = router;	
