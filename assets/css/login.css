@@ -11,7 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(128, 128, 128);
+    background-image: url('../images/loginbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     column-gap: 30px;
 }
 .form{

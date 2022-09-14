@@ -287,14 +287,12 @@ body.dark .switch::before{
 .home{
     position: absolute;
     top: 0;
-    top: 0;
     left: 250px;
-    height: 100vh;
-    width: calc(100% - 250px);
-    background-image: url("../images/donation\ dash.png");
-    background-repeat: no-repeat;
-    
+    height: 100px;
     background-size: cover;
+    width: calc(100% - 250px);
+    background-image: url("../images/donation dash.png");
+    background-repeat: repeat;
     transition: var(--tran-05);
 }
 .home .text{
@@ -376,9 +374,7 @@ body{
     left: 80px;
     top: 2px;
   }
-  
- 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
