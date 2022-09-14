@@ -1,89 +1,99 @@
 <main>
-<head>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/css/donorstyles.css">
-</head>
-<style>
-.mydiv1{
-  border: 0px outset white;
-  border-radius: 25px;
-  background-color: #fff ;
-  position: absolute;
-  left: 20%;
-  top:14%;
-   margin:25px;
-padding:40px;
-color:#707070;
-}
-</style>
-</head>
-</div>
-<a href="/donor/dashboard"> 
-	<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
-</a>
-
-<h1>Pending Donations</h1>
- <font size="+1">
-<div class="mydiv1">
-   <font face="Poppins"> 
-		
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../assets/css/donorstyles.css">
+	</head>
+	<style>
+	.mydiv1{
+	  border: 0px outset white;
+	  border-radius: 25px;
+	  background-color: #fff ;
+	  position: absolute;
+	  left: 17%;
+	  top:14%;
+	   margin:25px;
+	padding:40px;
+	color:#707070;
+	}
+	</style>
+	</head>
+	</div>
+	<a href="/donor/dashboard"> 
+		<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
+	</a>
 	
-			<% for(let i=0; i<pendingDonations.length; i++) { %>
-				
-				<div class="mb-2">
-						<span>No of Items:</span>
-						<span><%= pendingDonations[i].itemsCount %></span>
-				</div>
+	<h1>Pending Donations</h1>
+	 <font size="+1">
+	<div class="mydiv1">
+	   <font face="Poppins"> 
+			
+		
+				<% for(let i=0; i<pendingDonations.length; i++) { %>
 					
-				<div class="mb-2">
-						<span>Quantity:</span>
-						<span><%= pendingDonations[i].quantity %></span>
-				</div>
-					
-				<div class="mb-2">
-						<span>Food Category:</span>
-						<span><%= pendingDonations[i].category %></span>
-				</div>
-					
-				<div class="mb-2">
-						<span>Date of Pickup:</span>
-						<span><%= pendingDonations[i].pickupDate %></span>
-				</div>
-					
-				<div class="mb-2">
-						<span>Time of Pickup:</span>
-						<span><%= pendingDonations[i].pickupTime %></span>
+					<div class="mb-2">
+						<span>Donation:</span>
+						<span><%= i+1 %></span>
 					</div>
-				<div class="mb-2">
-						<span>Food Type:</span>
-						<span><%= pendingDonations[i].foodType %></span>
-				</div>
-				
-				<div class="mb-2">
-						<span>Status:</span>
+	
+					<div class="mb-2">
+							<span>No of Items:</span>
+							<span><%= pendingDonations[i].itemsCount %></span>
+					</div>
 						
-						<% if(pendingDonations[i].status == "pending") { %>
-							<span class="text-pending">Your donation request hasn't been processed yet.</span>
-						<% } else if(pendingDonations[i].status == "rejected") { %>
-							<span class="text-rejected">Your donation request has been rejected</span>
-						<% } else if(pendingDonations[i].status == "accepted") { %>
-							<span class="text-accepted">Your donation request has been accepted. Please wait while an agent is being assigned.</span>
-						<% } else if(pendingDonations[i].status == "assigned") { %>
-							<span class="text-assigned">Your donation request has been accepted and the agent: <%= pendingDonations[i].agent.firstName + " " + pendingDonations[i].agent.lastName %> has been assigned for collecting food from your house.For help , contact : <%= pendingDonations[i].agent.phone %> </span>
-						<% } %>
-				</div>
+					<div class="mb-2">
+							<span>Quantity:</span>
+							<span><%= pendingDonations[i].quantity %></span>
+					</div>
 						
+					<div class="mb-2">
+							<span>Food Category:</span>
+							<span><%= pendingDonations[i].category %></span>
+					</div>
 						
-					<% if(pendingDonations[i].status == "rejected") { %>
+					<div class="mb-2">
+							<span>Date of Pickup:</span>
+							<span><%= pendingDonations[i].pickupDate %></span>
+					</div>
 						
-							<a class="btn" href="/donor/donation/deleteRejected/<%= pendingDonations[i]._id %>">Okay</a>
+					<div class="mb-2">
+							<span>Time of Pickup:</span>
+							<span><%= pendingDonations[i].pickupTime %></span>
+						</div>
+					<div class="mb-2">
+							<span>Food Type:</span>
+							<span><%= pendingDonations[i].foodType %></span>
+					</div>
 					
-					<% } %>	
-			<% } %>
-			<br>	
-</div>
-</main>
+					<div class="mb-2">
+							<span>Status:</span>
+							
+							<% if(pendingDonations[i].status == "pending") { %>
+								<span class="text-pending">Your donation request hasn't been processed yet.</span>
+							<% } else if(pendingDonations[i].status == "rejected") { %>
+								<span class="text-rejected">Your donation request has been rejected</span>
+							<% } else if(pendingDonations[i].status == "accepted") { %>
+								<span class="text-accepted">Your donation request has been accepted. Please wait while an agent is being assigned.</span>
+							<% } else if(pendingDonations[i].status == "assigned") { %>
+								<span class="text-assigned">Your donation request has been accepted and the agent <%= pendingDonations[i].agent.firstName + " " + pendingDonations[i].agent.lastName %></span>
+								<span class="text-assigned">has been assigned for collecting food from your location.</span>
+								<span class="text-assigned">For help , contact : <%= pendingDonations[i].agent.phone %> </span>
+							<% } %>
+					</div>
+					<br>
+					<br>
+	
+							
+						<% if(pendingDonations[i].status == "rejected") { %>
+							
+								<a class="btn" href="/donor/donation/deleteRejected/<%= pendingDonations[i]._id %>">Okay</a>
+						
+						<% } %>	
+				<% } %>
+				<br>	
+	</div>
+	</main>
+	

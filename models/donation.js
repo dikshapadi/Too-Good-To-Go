@@ -21,10 +21,10 @@ const donationSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	foodType: {
-		type: String,
-		required: true
-	},
+	foodType: [{
+        type: String
+		
+    }],
 	donor: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "users",
