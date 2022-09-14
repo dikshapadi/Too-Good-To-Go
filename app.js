@@ -49,5 +49,5 @@ app.use((req,res) => {
 });
 
 const url = "mongodb+srv://Navya123:VNhogfVQCoFkRXDf@cluster0.jeuaqbk.mongodb.net/?retryWrites=true&w=majority";
-const port = process.env.PORT || 7000;
+const port = process.env.PORT || 5100;
 app.listen(port, console.log(`Server is running at http://localhost:${port}`));
