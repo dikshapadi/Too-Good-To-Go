@@ -12,6 +12,14 @@ body{
   background-color: rgb(128, 128, 128);
   align-items: center;
   justify-content: center;
+  position: absolute;
+    top: 0;
+    left: 150px;
+    width: calc(100% - 250px);
+    background-image: url("../images/reviewbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: var(--tran-05);
 }
 ::selection{
   color: #fff;
