@@ -78,13 +78,13 @@
 							<% } else if(pendingDonations[i].status == "accepted") { %>
 								<span class="text-accepted">Your donation request has been accepted. Please wait while an agent is being assigned.</span>
 							<% } else if(pendingDonations[i].status == "assigned") { %>
-								<span class="text-assigned">Your donation request has been accepted and the agent <%= pendingDonations[i].agent.firstName + " " + pendingDonations[i].agent.lastName %></span>
+								<span class="text-assigned">Your donation request has been accepted and the agent <%= pendingDonations[i].agent.firstName + " " + pendingDonations[i].agent.lastName %></span><br>
 								<span class="text-assigned">has been assigned for collecting food from your location.</span>
-								<span class="text-assigned">For help , contact : <%= pendingDonations[i].agent.phone %> </span>
+								<span class="text-assigned"><br>For help , contact : <%= pendingDonations[i].agent.phone %> </span>
 							<% } %>
 					</div>
 					<br>
-					<br>
+					
 	
 							
 						<% if(pendingDonations[i].status == "rejected") { %>
