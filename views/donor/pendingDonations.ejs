@@ -83,10 +83,7 @@
 								<span class="text-assigned"><br>For help , contact : <%= pendingDonations[i].agent.phone %> </span>
 							<% } %>
 					</div>
-					<br>
-					
-	
-							
+					<br>	
 						<% if(pendingDonations[i].status == "rejected") { %>
 							
 								<a class="btn" href="/donor/donation/deleteRejected/<%= pendingDonations[i]._id %>">Okay</a>
