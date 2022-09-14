@@ -369,3 +369,18 @@ body{
     color: #606060;
 
 }
+.charts{
+    position: relative;
+    float: left;
+    width: 50%;
+    left: 80px;
+    top: 2px;
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
