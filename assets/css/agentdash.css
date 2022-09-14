@@ -289,7 +289,6 @@ body.dark .switch::before{
     top: 0;
     top: 0;
     left: 250px;
-    height: 100vh;
     width: calc(100% - 250px);
     background-image: url("../images/agent\ dash.png");
     background-repeat: no-repeat;
@@ -322,10 +321,10 @@ body.dark .home .text{
     font-family: 'Poppins', sans-serif;
 }
 
-.chart{
+.charts{
     position: relative;
-    float: left;
+    float: center;
     width: 50%;
-    left: 80px;
+    left: 300px;
     top: 2px;
   }

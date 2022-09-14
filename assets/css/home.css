@@ -137,6 +137,14 @@ span.text{
   width: 33%;
   padding: 7px;
 }
+.column2{
+  min-height: 200px;
+  float: left;
+  width: 33%;
+  padding: 40px;
+  
+}
+
  
 .part3 h1{
   font-weight: bold;

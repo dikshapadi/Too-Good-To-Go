@@ -24,9 +24,10 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 400%;
     background-color: var(--body-color);
     transition: var(--tran-05);
+    overflow-x: scroll;
 
 }
 
@@ -292,9 +293,10 @@ body.dark .switch::before{
     height: 100vh;
     width: calc(100% - 250px);
     background-image: url("../images/admin\ dash.png");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: cover;
     transition: var(--tran-05);
+    
 }
 .home .text{
     font-size: 30px;
@@ -327,5 +329,3 @@ body.dark .home .text{
     left: 80px;
     top: 4px;
   }
-  
-
