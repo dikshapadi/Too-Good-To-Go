@@ -1,4 +1,4 @@
-*{
+ *{
   margin:0;
   padding:0;
   font-family: 'Ibarra Real Nova', serif;
@@ -325,14 +325,13 @@ span.text{
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
-  
   transition: max-height 0.5s;
 }
 #accordion label + input[type="radio"]:checked + .content{
   max-height: 400px;
 }
 
-.footer{
+.footer{ 
   height: 100%;
   margin: 0%;
   padding: 0%;
