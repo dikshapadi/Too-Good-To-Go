@@ -18,12 +18,12 @@
     background-attachment: fixed;
     background-size: 100% 100%;
     column-gap: 30px;
- 
+
 }
 .form{
     margin-top: 10%;
     position: absolute;
-    top: -20%;
+    top: -18%;
     max-width: 450px;
     width: 80%;
     height: 97%;
