@@ -288,6 +288,16 @@ span.text{
 .fa{
     display: none;
   }
+.FAQ{
+padding: 20px;
+top: 2px;
+margin: 50px;
+border: 5px solid black;
+border-radius: 20px;
+background-color:  #d7f7d7;
+}
+
+
 .footer{
     width: 100%;
     text-align: center;
@@ -298,47 +308,6 @@ span.text{
     margin-top: 20px;
     font-weight: 600;
 }
-
-#accordion{
-  margin: 100px auto;
-  width: 600px;
-}
-#accordion li{
-  list-style: none;
-  width: 100%;
-  margin-bottom: 10px;
-  background: #fff;
-  padding: 10px;
-  border-radius: 4px;
-}
-#accordion li label{
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  color: #c20000;
-}
-#accordion li label span{
-  transform: rotate(90deg);
-  font-size: 22px;
-  color: #333;
-}
-#accordion label + input[type="radio"]{
-  display: none;
-}
-#accordion .content{
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0;
-  transition: max-height 0.5s;
-}
-#accordion label + input[type="radio"]:checked + .content{
-  max-height: 400px;
-}
-
 .footer{ 
   height: 100%;
   margin: 0%;
