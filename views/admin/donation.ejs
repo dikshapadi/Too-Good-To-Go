@@ -25,7 +25,7 @@ h1{
   border-radius: 25px;
   background-color: #fff ;
   position: absolute;
-  left: 30%;
+  left: 33.5%;
   top:14%;
    margin:25px;
 padding:40px;
@@ -33,7 +33,7 @@ color:#707070;
 }
 </style>
 </head>
-<a href="/admin/dashboard"> 
+<a href="/admin/pendingDonations"> 
 	<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
 	</a>
 
@@ -76,8 +76,7 @@ color:#707070;
 			
 			<% if(donation.donorToAdminMsg != "") { %>
 				<div class="mb-2">
-					<span>Message from Donor:</span>
-					<div class="ms-3"><%= donation.donorToAdminMsg %></div>
+					<span>Message from Donor:<%= donation.donorToAdminMsg %></span>
 				</div>
 			<% } %>
 				
