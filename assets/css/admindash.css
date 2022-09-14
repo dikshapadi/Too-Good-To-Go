@@ -285,14 +285,12 @@ body.dark .switch::before{
 }
 
 .home{
-    position: absolute;
-    top: 0;
+    position: relative;
     top: 0;
     left: 250px;
-    height: 100vh;
     width: calc(100% - 250px);
-    background-image: url("../images/admin\ dash.png");
-    background-repeat: no-repeat;
+    background-image: url("../images/admin dash.png");
+    /*background-repeat: repeat;*/
     background-size: cover;
     transition: var(--tran-05);
 }

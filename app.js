@@ -48,5 +48,6 @@ app.use((req,res) => {
 	res.status(404).render("404page", { title: "Page not found" });
 });
 
-const port = process.env.PORT || 5100;
+const url = "mongodb+srv://Navya123:VNhogfVQCoFkRXDf@cluster0.jeuaqbk.mongodb.net/?retryWrites=true&w=majority";
+const port = process.env.PORT || 7000;
 app.listen(port, console.log(`Server is running at http://localhost:${port}`));
