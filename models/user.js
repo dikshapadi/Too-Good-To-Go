@@ -25,11 +25,11 @@ const userSchema = new mongoose.Schema({
 		type: Date,
 		default: Date.now
 	},
-	role: {
-		type: String,
-		enum: ["admin", "donor", "agent"],
-		required: true
-	},
+	//role: {
+		//type: String,
+		//enum: ["admin", "donor", "agent"],
+		//required: true
+	//},
 	address: {
 		type: String,
 		//required: true
