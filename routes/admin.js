@@ -23,9 +23,8 @@ router.get("/admin/donations/pending", middleware.ensureAdminLoggedIn, async (re
 	try
 	{
 		const pendingDonations = await Donation.find({status: ["pending", "accepted", "assigned"]}).populate("donor");
-		console.log("checkme");
 		res.render("admin/pendingDonations", { title: "Pending Donations", pendingDonations });
-		console.log("checkme2");
+
 	}
 	catch(err)
 	{
@@ -53,11 +52,9 @@ router.get("/admin/donation/view/:donationId", middleware.ensureAdminLoggedIn, a
 	try
 	{
 		const donationId = req.params.donationId;
-		console.log("checkme3");
-		const donation = await Donation.findById(donationId).populate("donor").populate("agent");
-		console.log("checkme4");
+		const donation = await Donation.findById(donationId).populate("donor").populate("agent");	
 		res.render("admin/donation", { title: "Donation details", donation });
-		console.log("checkme5");
+		
 	}
 	catch(err)
 	{
