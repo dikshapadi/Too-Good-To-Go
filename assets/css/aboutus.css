@@ -272,3 +272,7 @@ padding: 30px;
 .col h2{
   text-align: center;
 }
+.column{
+  width: 25%;
+  float: left;
+}
