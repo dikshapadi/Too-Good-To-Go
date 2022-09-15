@@ -280,6 +280,7 @@ span.text{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   }
+
   .button:hover{
     border: 1px solid #f44336;
     background: #f44336;
