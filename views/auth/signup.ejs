@@ -26,29 +26,29 @@
             <% } %>
 
             <div class="field input-field">
-                <input type="text" name="firstName" placeholder="Enter your first name" class="input" value="<%= typeof firstName != 'undefined' ? firstName : '' %>" required autofocus>
+                <input type="text" name="firstName" placeholder="Enter your first name*" class="input" value="<%= typeof firstName != 'undefined' ? firstName : '' %>" required autofocus>
             </div>
 
             <div class="field input-field">
-                <input type="text" name="lastName" placeholder="Enter your last name" class="input" value="<%= typeof lastName != 'undefined' ? lastName : '' %>" required>
+                <input type="text" name="lastName" placeholder="Enter your last name*" class="input" value="<%= typeof lastName != 'undefined' ? lastName : '' %>" required>
             </div>
 
 
             <div class="field input-field">
-                <input type="email" name="email" placeholder="Email" class="input"  value="<%= typeof email != 'undefined' ? email : '' %>" required>
+                <input type="email" name="email" placeholder="Email*" class="input"  value="<%= typeof email != 'undefined' ? email : '' %>" required>
             </div>
 
             <div class="field input-field">
-                <input type="password" name="password1" placeholder="Create password" class="password"   value="<%= typeof password1 != 'undefined' ? password1 : '' %>" required>
+                <input type="password" name="password1" placeholder="Create password*" class="password"   value="<%= typeof password1 != 'undefined' ? password1 : '' %>" required>
             </div>
 
             <div class="field input-field">
-                <input type="password" name="password2" placeholder="Confirm password" class="password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" required>
+                <input type="password" name="password2" placeholder="Confirm password*" class="password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" required>
                 <i class='bx bx-hide eye-icon'></i>
             </div>
            
             <div class="field input-field">
-                <label for="role" class="form-label">Signup as</label>
+                <label for="role" class="form-label">Signup as*</label>
                  </br>
                 <select class="form-select" name="role" id="role">
                     <option value="donor">Donor</option>
