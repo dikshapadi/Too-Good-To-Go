@@ -286,6 +286,7 @@ body.dark .switch::before{
     background-image: url("../images/agent\ dash.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     
     
 }
@@ -313,3 +314,11 @@ body.dark .home .text{
     top: 2px;
   }
 
+  body{
+    min-height: 50%;
+    background-image: url("../images/agent\ dash.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: -1px;
+margin-left: -1px;
+  }
