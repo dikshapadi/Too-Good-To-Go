@@ -50,16 +50,6 @@ body {
   dl {
       list-style-type: disc;
   }
-  .myDiv
-   {
-    border: 5px outset black;
-    height:715px;
-    width:600px;
-    border-radius: 25px;
-    background-color: #fff ;
-    position: absolute;
-    left: 27%;
-  } 
   form {
   font-family: 'Poppins', sans-serif;
   }
@@ -96,9 +86,9 @@ body {
     position: absolute;
     left: 23%;
     top:14%;
-     margin:25px;
-  padding:40px;
-  color:#707070;
+    margin:25px;
+    padding:40px;
+    color:#707070;
   }
 
   h1{ 
