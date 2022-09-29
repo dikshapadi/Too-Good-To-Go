@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../../assets/css/agentstyles.css">
     </head>
     <style>
-        	body {
+
+body {
   background-color:#E4E9F7;
 }
 h1{ color:#707070; 
@@ -37,7 +38,7 @@ h1{
 		<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
 		
 	</a>
-    <h1>collection</h1>
+    <h1>Collection</h1>
      <font size="+1">
     <div class="mydiv1">
        <font face="Poppins"> 
@@ -77,15 +78,17 @@ h1{
             <span>Status:</span>
             <span class="fw-bold text-<%= collection.status %>"><%= collection.status %></span>
     </div>
+    <div class="mb-2">
+        <a href="/agent/collection/collect/>" class="btn">Collect</a>
+        </div>
+</div>
 			
 			<% if(collection.status == "assigned" && collection.adminToAgentMsg != "") { %>
 				<div class="mb-2">
 					<span>Message from Admin:</span>
 					<div class="ms-3"><%= collection.adminToAgentMsg %></div>
 				</div>
-			<% } %>
+			<% } %
+
 			
-		</div>
-		
-	</div>
 </main>
