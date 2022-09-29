@@ -1,22 +1,20 @@
-<head>
-    <script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<main>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/agentstyles.css">
-<<<<<<< HEAD
     </head>
     <style>
-
-body {
+        	body {
   background-color:#E4E9F7;
 }
-h1{ color:#707070; 
-}
-h1{ text-align: center;
-}
-h1{
-  font-family: 'Poppins', sans-serif;
+h1{ 
+    color:#707070; 
+    text-align: center;
+    border: 0px outset white;   
 }
 
     .mydiv1{
@@ -32,25 +30,16 @@ h1{
     }
     </style>
     </head>
-=======
-</head>
->>>>>>> 7d1f40448421a92b0956c3a3a7c3a4a2aeb4ebd2
     </div>
-    <a href="/agent/collections/pending"> 
+    <a href="/agent/dashboard"> 
 		<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
 		
 	</a>
-<<<<<<< HEAD
-    <h1>Collection</h1>
-     <font size="+1">
-=======
     <h1>collection</h1>
-    <font size="+1">
->>>>>>> 217dc942298e7a3e96dd4ec801519c9764149d98
+     <font size="+1">
     <div class="mydiv1">
        <font face="Poppins"> 
-        
-        <div class="mb-2">
+             <div class="mb-2">
             <span>Name:</span>
             <span><%= collection.donor.firstName + " " + collection.donor.lastName  %></span>
         </div>
@@ -65,64 +54,36 @@ h1{
             <span><%= collection.address %></span>
     
         </div>
-
         <div class="mb-2">
             <span>Quantity:</span>
             <span><%= collection.quantity %></span>
-        </div>
+    </div>
         
-        <div class="mb-2">
+    <div class="mb-2">
             <span>Food type::</span>
             <span><%= collection.foodtype %></span>
         </div>
         <div class="mb-2">
             <span>Date:</span>
             <span><%= collection.pickupDate %></span>
-        </div>
-        <div class="mb-2">
+    </div>
+    <div class="mb-2">
             <span>Time of Pickup:</span>
             <span><%= collection.pickupTime %></span>
-        </div>
-        <div class="mb-2">
+    </div>
+    <div class="mb-2">
             <span>Status:</span>
             <span class="fw-bold text-<%= collection.status %>"><%= collection.status %></span>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	</div>		  
-    <a href="/agent/collection/collect/<%= collection[i]._id %>" class="btn">/Collect</a>
-=======
     </div>
-<<<<<<< HEAD
-    <div class="mb-2">
-        <a href="/agent/collection/collect/>" class="btn">Collect</a>
-        </div>
-</div>
-=======
-    <a href="" class="btn">Collect</a>
->>>>>>> 7d1f40448421a92b0956c3a3a7c3a4a2aeb4ebd2
 			
->>>>>>> 56f249e1eef51c5c876a3b200043bea95cef7b23
-=======
-        </div>
-        <a href="" class="btn">Collect</a>
->>>>>>> 217dc942298e7a3e96dd4ec801519c9764149d98
 			<% if(collection.status == "assigned" && collection.adminToAgentMsg != "") { %>
 				<div class="mb-2">
 					<span>Message from Admin:</span>
 					<div class="ms-3"><%= collection.adminToAgentMsg %></div>
 				</div>
-			<% } %
-
+			<% } %>
 			
-<<<<<<< HEAD
-</main>
-=======
 		</div>
 		
 	</div>
-<<<<<<< HEAD
-
 </main>
-=======
->>>>>>> 7d1f40448421a92b0956c3a3a7c3a4a2aeb4ebd2
->>>>>>> 56f249e1eef51c5c876a3b200043bea95cef7b23
