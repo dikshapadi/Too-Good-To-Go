@@ -19,11 +19,3 @@
 	background-color: #1fa64e;
 }
 
-.btn
-{
-	padding: 6px 15px;
-	font-size: 18px;
-	color: white;
-	background-color: var(--theme-color);
-	border-radius: 0px;
-}
