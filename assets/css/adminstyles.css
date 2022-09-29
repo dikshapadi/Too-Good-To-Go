@@ -1,18 +1,19 @@
 body {
       background-color: #E4E9F7;
+      padding: 50px;
   }
   
   
   table {
       border-collapse:separate;
-      border:solid black 1px;
+      border:solid black 2px;
       border-radius:6px;
     
   }
   
   td, th {
-      border-left:solid black 1px;
-      border-top:solid black 1px;
+      border-left:solid black 1.5px;
+      border-top:solid black 1.5px;
   }
   
   th {
