@@ -37,7 +37,7 @@ h1{
 		<i class='fas fa-arrow-alt-circle-left' style='font-size:24px;color:#707070;'></i>
 		
 	</a>
-    <h1>collection</h1>
+    <h1>Collection</h1>
      <font size="+1">
     <div class="mydiv1">
        <font face="Poppins"> 
@@ -76,8 +76,8 @@ h1{
     <div class="mb-2">
             <span>Status:</span>
             <span class="fw-bold text-<%= collection.status %>"><%= collection.status %></span>
-    </div>
-			
+	</div>		  
+    <a href="/agent/collection/collect/<%= collection[i]._id %>" class="btn">/Collect</a>
 			<% if(collection.status == "assigned" && collection.adminToAgentMsg != "") { %>
 				<div class="mb-2">
 					<span>Message from Admin:</span>
@@ -88,4 +88,5 @@ h1{
 		</div>
 		
 	</div>
+
 </main>
