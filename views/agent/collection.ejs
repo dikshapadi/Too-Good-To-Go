@@ -1,5 +1,5 @@
- <head>
-	<script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
+<head>
+    <script src="https://kit.fontawesome.com/2dc22d6664.js" crossorigin='anonymous'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -11,10 +11,11 @@
 		
 	</a>
     <h1>collection</h1>
-     <font size="+1">
+    <font size="+1">
     <div class="mydiv1">
        <font face="Poppins"> 
-             <div class="mb-2">
+        
+        <div class="mb-2">
             <span>Name:</span>
             <span><%= collection.donor.firstName + " " + collection.donor.lastName  %></span>
         </div>
@@ -29,29 +30,29 @@
             <span><%= collection.address %></span>
     
         </div>
+
         <div class="mb-2">
             <span>Quantity:</span>
             <span><%= collection.quantity %></span>
-    </div>
+        </div>
         
-    <div class="mb-2">
+        <div class="mb-2">
             <span>Food type::</span>
             <span><%= collection.foodtype %></span>
         </div>
         <div class="mb-2">
             <span>Date:</span>
             <span><%= collection.pickupDate %></span>
-    </div>
-    <div class="mb-2">
+        </div>
+        <div class="mb-2">
             <span>Time of Pickup:</span>
             <span><%= collection.pickupTime %></span>
-    </div>
-    <div class="mb-2">
+        </div>
+        <div class="mb-2">
             <span>Status:</span>
             <span class="fw-bold text-<%= collection.status %>"><%= collection.status %></span>
-    </div>
-    <a href="" class="btn">Collect</a>
-			
+        </div>
+        <a href="" class="btn">Collect</a>
 			<% if(collection.status == "assigned" && collection.adminToAgentMsg != "") { %>
 				<div class="mb-2">
 					<span>Message from Admin:</span>
