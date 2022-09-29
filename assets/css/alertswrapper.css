@@ -1,0 +1,29 @@
+.alerts-wrapper
+{
+	position: absolute;
+	right: 0px;
+	width: fit-content;
+	font-weight: bold;
+	animation: moveLeft 0.1s linear;
+	z-index: 100;
+}
+
+.alerts-wrapper .alert-danger
+{
+	color: white;
+	background-color: #e22a2a;
+}
+.alerts-wrapper .alert-success
+{
+	color: white;
+	background-color: #1fa64e;
+}
+
+.btn
+{
+	padding: 6px 15px;
+	font-size: 18px;
+	color: white;
+	background-color: var(--theme-color);
+	border-radius: 0px;
+}

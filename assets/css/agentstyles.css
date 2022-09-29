@@ -36,13 +36,6 @@ body {
   a:link {
     text-decoration: none;
   }
-  h1{ color:#707070; 
-  }
-  h1{ text-align: center;
-  }
-  h1{
-    font-family: 'Poppins', sans-serif;
-  }
   
   dl{
    font-family: 'Poppins', sans-serif;
@@ -110,3 +103,22 @@ body {
     padding:20px;
    
   }
+
+ 
+  .h1{ 
+      color:#707070; 
+      text-align: center;
+      border: 0px outset white;   
+  }
+  
+  .mydiv1{
+    border: 0px outset white;
+    border-radius: 25px;
+    background-color: #fff ;
+    position: absolute;
+    left: 23%;
+    top:14%;
+    margin:25px;
+    padding:40px;
+    color:#707070;
+  }     
