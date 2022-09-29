@@ -289,11 +289,11 @@ body.dark .switch::before{
     top: 0;
     left: 250px;
     height: 100px;
-    background-size: cover;
     width: calc(100% - 250px);
     background-image: url("../images/donation dash.png");
+    background-size: cover;
     background-repeat: repeat;
-    transition: var(--tran-05);
+    background-attachment: fixed;
 }
 .home .text{
     font-size: 30px;
@@ -324,7 +324,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #7d2ae8;
+    background-image: url("../images/donation dash.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 .container{
     margin-left: 100px;

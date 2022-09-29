@@ -23,13 +23,6 @@
     --tran-05: all 0.3s ease;
 }
 
-body{
-    min-height: 100vh;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
-
-}
-
 ::selection{
     background-color: var(--primary-color);
     color: #fff;
@@ -294,7 +287,7 @@ body.dark .switch::before{
     background-repeat: no-repeat;
     background-size: cover;
     
-    transition: var(--tran-05);
+    
 }
 .home .text{
     font-size: 30px;
@@ -311,15 +304,6 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
-/* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
 .charts{
     position: relative;
@@ -328,3 +312,4 @@ body.dark .home .text{
     left: 350px;
     top: 2px;
   }
+

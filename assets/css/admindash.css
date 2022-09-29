@@ -24,10 +24,10 @@
 }
 
 body{
-    min-height: 400%;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
-    overflow-x: scroll;
+    min-height: 190%;
+    background-image: url("../images/admin\ dash.png");
+    background-repeat:no-repeat;
+    background-size: cover;
 
 }
 
