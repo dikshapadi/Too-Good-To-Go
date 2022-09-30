@@ -38,7 +38,7 @@ A web application which is useful for food waste management, food donation and c
 
 ### Agent Features
 - Agents will receive notifications from admins to collect food from donor's homes.
-- Agents can mark their collection upon collection of food from donor's home and as well as delivery when the delivery has been done.
+- Agents can mark their collection upon collection of food from donor's home.
 - Agents can also view all those food donations which have been collected by them previously.
 - Agents can update their profile.
 

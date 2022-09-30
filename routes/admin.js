@@ -84,7 +84,7 @@ router.get("/admin/donation/reject/:donationId", middleware.ensureAdminLoggedIn,
 	try
 	{
 		const donationId = req.params.donationId;
-		await Donation.findByIdAndUpdate(donationId, { status: "rejected" });
+		await Donation.findByIdAndUpdate(donationId, { status: "rejected"});
 		req.flash("success", "Donation rejected successfully");
 		res.redirect(`/admin/donation/view/${donationId}`);
 	}
