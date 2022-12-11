@@ -1,6 +1,6 @@
 # Food Waste Management System
 
-A web application which is useful for food waste management, food donation and collection activities.  
+'Too Good To Go' web application is an incubating idea for a non profit organization that aims to battle problems of food waste and world hunger simultaneously.
 
 
 ## Table of Contents
