@@ -1,4 +1,4 @@
-# Food Donation Management System
+# Food Waste Management System
 
 A web application which is useful for food waste management, food donation and collection activities.  
 
