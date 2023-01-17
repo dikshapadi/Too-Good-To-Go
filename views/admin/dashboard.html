@@ -1,0 +1,90 @@
+<head>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../../assets/css/admindash.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../../assets/images/too good to go-logos_black.png">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Food Donation</span>
+                    <span class="profession">Admin</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/admin/donations/pending">
+                            <i class='bx bx-alarm-exclamation icon' ></i>
+                            <span class="text nav-text">Pending Donations</span>
+                        </a>
+                    </li>
+					<li class="nav-link">
+                        <a href="/admin/donations/previous">
+                            <i class='bx bx-skip-previous icon' ></i>
+                            <span class="text nav-text">Previous Donations</span>
+                        </a>
+                    </li>
+					<li class="nav-link">
+                        <a href="/admin/agents">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="text nav-text">Agents</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/admin/profile">
+                            <i class='bx bx-user-pin icon' ></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/auth/logout">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <div class="text">Every Donation Counts</div>
+        <div class="charts"><iframe style="background:#b9fded;border:none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"  src="https://charts.mongodb.com/charts-project-0-udxjl/embed/dashboards?id=a7e08641-0d0e-458a-926b-8655e68bc825&theme=light&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed" width="410px" height="450px"></iframe></div>
+        <div class="charts"><iframe style="background:#b9fded;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"  src="https://charts.mongodb.com/charts-project-0-udxjl/embed/dashboards?id=95381cf5-23e7-48e8-ae07-ef281b3829fa&theme=light&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed" width="410px" height="450px"></iframe></div>
+        <div class="charts"><iframe style="background: #b9fded;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"  src="https://charts.mongodb.com/charts-project-0-udxjl/embed/dashboards?id=1271feb3-74cf-4be1-981c-3987836c2de0&theme=light&autoRefresh=true&maxDataAge=86400&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed" width="410px" height="450px"></iframe></div>
+        <div class="charts"><iframe style="background: #b9fded;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"  src="https://charts.mongodb.com/charts-project-0-udxjl/embed/dashboards?id=4279b358-8988-439f-94bf-8015cc2cc884&theme=light&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed" width="410px" height="450px"></iframe></div>
+    </section>
+    
+    <script>
+    	const body = document.querySelector('body'),
+     	sidebar = body.querySelector('nav'),
+    	toggle = body.querySelector(".toggle"),
+
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+		toggle.addEventListener("click" , () =>{sidebar.classList.toggle("close");})
+    </script>
+
+
+
+
+
